@@ -39,7 +39,8 @@ const AboutUsMain = () => {
   return (
     <Wrapper>
       {/* header area start */}
-      <HeaderFour transparent={true} />
+      <HeaderFour /> 
+      {/* transparent={true}  */}
       {/* header area end */}
 
       <div id="smooth-wrapper">
