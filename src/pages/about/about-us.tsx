@@ -20,6 +20,7 @@ import AwardOne from "@/components/award/award-one";
 import { charAnimation, fadeAnimation, titleAnimation } from "@/utils/title-animation";
 import { hoverBtn } from "@/utils/hover-btn";
 import { teamMarqueAnim } from "@/utils/scroll-marque";
+import HeaderFour from "@/layouts/headers/header-four";
 
 const AboutUsMain = () => {
   useScrollSmooth();
@@ -38,7 +39,7 @@ const AboutUsMain = () => {
   return (
     <Wrapper>
       {/* header area start */}
-      <HeaderEleven transparent={true} />
+      <HeaderFour transparent={true} />
       {/* header area end */}
 
       <div id="smooth-wrapper">

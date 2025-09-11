@@ -46,14 +46,14 @@ export default function HeaderFour() {
                         {/* header menus */}
                       </nav>
                     </div>
-                    <div className="tp-header-3-cart p-relative">
+                    {/* <div className="tp-header-3-cart p-relative">
                       <button className="cartmini-open-btn" onClick={() => setOpenCartMini(true)}>
                         <span>
                           <Cart clr="white" />
                         </span>
                         <em>0</em>
                       </button>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
