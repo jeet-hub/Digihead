@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import ContactTwoMain from "@/pages/contact/contact-2";
 
 export const metadata: Metadata = {
-  title: "Liko - Contact 2 Page",
+  title: "Digiheads - Contact 2",
 };
 
 const ContactTwoPage = () => {
