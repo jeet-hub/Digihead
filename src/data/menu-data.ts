@@ -61,7 +61,7 @@ const menu_data:IMenuDT[] = [
   {
     id: 3,
     title: 'Projects',
-    link: '/portfolio-standard',
+    link: '/portfolio-wrapper',
     // portfolio_mega_menus: {
     //   first: {
     //     title: 'PORTFOLIO LIST',

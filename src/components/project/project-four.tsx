@@ -3,8 +3,8 @@ import Image from "next/image";
 
 import { ProjectShape, RightArrow } from "../svg";
 // images
-import port_1 from "@/assets/img/home-03/portfolio/port-1.jpg";
-import port_2 from "@/assets/img/home-03/portfolio/port-2.jpg";
+import port_1 from "@/assets/img/home-03/portfolio/port-1.png";
+import port_2 from "@/assets/img/home-03/portfolio/port-2.png";
 import port_3 from "@/assets/img/home-03/portfolio/port-3.jpg";
 import port_4 from "@/assets/img/home-03/portfolio/port-4.jpg";
 import port_5 from "@/assets/img/home-03/portfolio/port-5.jpg";
@@ -19,8 +19,8 @@ const project_data = [
     id: 1,
     img_1: port_1,
     img_2: port_2,
-    meta: "DEC 2024 . Creative",
-    title: "Pellente dapibus",
+    meta: "AUG 2025 . E-Comm",
+    title: "Manatee",
   },
   {
     id: 2,
@@ -94,11 +94,11 @@ export default function ProjectFour({ style_2 = false }: IProps) {
                     <div className="tp-project-3-content text-center">
                       <span className="tp-project-3-meta">{item.meta} </span>
                       <h4 className="tp-project-3-title-sm">
-                        <Link href="/portfolio-details-1">{item.title}</Link>
+                        <Link href="/home-9">{item.title}</Link>
                       </h4>
                       <Link
                         className="tp-btn-project-sm"
-                        href="/portfolio-details-1"
+                        href="/home-9"
                       >
                         See Project
                       </Link>

@@ -15,6 +15,7 @@ import { charAnimation } from "@/utils/title-animation";
 import ContactForm from "@/components/form/contact-form";
 import ContactLocationTwo from "@/components/contact/contact-location-2";
 import HeaderFour from "@/layouts/headers/header-four";
+import FooterFour from "@/layouts/footers/footer-four";
 
 const ContactTwoMain = () => {
   useScrollSmooth();
@@ -48,7 +49,7 @@ const ContactTwoMain = () => {
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="tm-hero-content">
-                        <span className="tm-hero-subtitle">Liko Studio</span>
+                        <span className="tm-hero-subtitle">Digiheads Studio</span>
                         <h4 className="tm-hero-title-big tp-char-animation">
                           Get <br /> in touch
                         </h4>
@@ -67,7 +68,7 @@ const ContactTwoMain = () => {
                       <div className="col-xl-6">
                         <div className="cn-contactform-2-map">
                           <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d37866.42024631252!2d90.04636289871837!3d23.823039160865342!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1699251079678!5m2!1sen!2sbd"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.057748350837!2d77.0417568150828!3d28.484278482476366!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d19a50a9ef1c3%3A0x2f27ef1b1b9d04e!2sSector%2017%2C%20Gurugram%2C%20Haryana%20122001!5e0!3m2!1sen!2sin!4v1699251079678!5m2!1sen!2sin"
                             style={{border:0}}
                             allowFullScreen
                             loading="lazy"
@@ -108,12 +109,12 @@ const ContactTwoMain = () => {
                {/* about area end */}
 
               {/* contact location */}
-              <ContactLocationTwo/>
+              {/* <ContactLocationTwo/> */}
               {/* contact location */}
             </main>
 
             {/* footer area */}
-            <FooterTwo topCls="" />
+            <FooterFour />
             {/* footer area */}
           </div>
         </div>

@@ -5,10 +5,11 @@ import Link from "next/link";
 import { Cart, MenuThree } from "@/components/svg";
 import HeaderMenus from "./header-menus";
 import useSticky from "@/hooks/use-sticky";
-import logo from "@/assets/img/logo/logo.png";
-import logo_2 from "@/assets/img/logo/logo-white.png";
+import logo from "@/assets/img/logo/Dh-b.png";
+import logo_2 from "@/assets/img/logo/DH-logo.png";
 import CartOffcanvas from "@/components/offcanvas/cart-offcanvas";
 import MobileOffcanvas from "@/components/offcanvas/mobile-offcanvas";
+
 
 // prop type 
 type IProps = {
@@ -56,7 +57,7 @@ export default function HeaderEleven({transparent=false,cls=''}: IProps) {
               <div className="col-xl-2 col-lg-6 col-md-6 col-6">
                 <div className="tp-inner-header-right-action text-end">
                   <ul>
-                    <li>
+                    {/* <li>
                       <div className="tp-inner-cart">
                         <a
                           onClick={() => setOpenCartMini(true)}
@@ -68,7 +69,7 @@ export default function HeaderEleven({transparent=false,cls=''}: IProps) {
                           </span>
                         </a>
                       </div>
-                    </li>
+                    </li> */}
                     <li>
                       <div className="tp-inner-bar tp-header-bar">
                         <button onClick={()=> setOpenOffCanvas(true)} className="tp-offcanvas-open-btn">

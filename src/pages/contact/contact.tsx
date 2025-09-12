@@ -15,6 +15,7 @@ import FooterTwo from "@/layouts/footers/footer-two";
 // animation
 import { charAnimation } from "@/utils/title-animation";
 import HeaderFour from "@/layouts/headers/header-four";
+import FooterFour from "@/layouts/footers/footer-four";
 
 const ContactMain = () => {
   useScrollSmooth();
@@ -48,7 +49,7 @@ const ContactMain = () => {
                   <div className="row">
                     <div className="col-xl-12">
                       <div className="tm-hero-content">
-                        <span className="tm-hero-subtitle">Liko Studio</span>
+                        <span className="tm-hero-subtitle">Digiheads Studio</span>
                         <h4 className="tm-hero-title-big tp-char-animation">
                           Get in touch
                         </h4>
@@ -64,12 +65,12 @@ const ContactMain = () => {
               {/* contact area */}
 
               {/* contact location */}
-              <ContactLocation/>
+              {/* <ContactLocation/> */}
               {/* contact location */}
             </main>
 
             {/* footer area */}
-            <FooterTwo topCls="" whiteFooter={true} />
+            <FooterFour />
             {/* footer area */}
           </div>
         </div>

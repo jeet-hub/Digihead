@@ -55,9 +55,9 @@ const AboutUsMain = () => {
             {/* about area */}
 
             {/* team area */}
-            <TeamOne spacing="" />
+            {/* <TeamOne spacing="" /> */}
             {/* team area */}
-
+            <hr />
             {/* fun fact area */}
             <FunFactOne />
             {/* fun fact area */}

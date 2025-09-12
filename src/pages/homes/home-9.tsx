@@ -10,6 +10,8 @@ gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother, SplitText);
 import HeaderEight from "@/layouts/headers/header-eight";
 import PortfolioSliderHomeNine from "@/components/portfolio/slider/portfolio-slider-home-nine";
 import ThemeSetting from "@/components/theme-setting";
+import HeaderNine from "@/layouts/headers/header-nine";
+import HeaderEleven from "@/layouts/headers/header-eleven";
 
 const HomeNineMain = () => {
   const [whiteCls, setWhiteCls] = React.useState(true);
@@ -34,7 +36,7 @@ const HomeNineMain = () => {
             className={`tp-porfolio-10-main ${whiteCls ? "header-white" : ""}`}
           >
             {/* header area start */}
-            <HeaderEight style_2={true} container="1685" />
+            <HeaderEleven />
             {/* header area end */}
 
             <main>

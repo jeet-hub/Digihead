@@ -52,10 +52,10 @@ export default function AboutUsHero() {
               data-stagger="0.08"
             >
               <p>
-                Liko develops, designs & delivers websites & creative campaigns
+                Digiheads develops, designs & delivers websites & creative campaigns
                 that drive results,
               </p>
-               <a className="tp-btn-white-sm border-style" href="#">Our Story</a>
+               {/* <a className="tp-btn-white-sm border-style" href="">Our Story</a> */}
             </div>
           </div>
         </div>

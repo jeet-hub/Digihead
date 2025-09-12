@@ -15,6 +15,7 @@ import FooterTwo from "@/layouts/footers/footer-two";
 // animation
 import { charAnimation,titleAnimation } from "@/utils/title-animation";
 import { projectThreeAnimation } from "@/utils/project-anim";
+import FooterFour from "@/layouts/footers/footer-four";
 
 const PortfolioWrapperMain = () => {
   useScrollSmooth();
@@ -43,7 +44,7 @@ const PortfolioWrapperMain = () => {
                 <div className="row">
                   <div className="col-xl-12">
                     <div className="tm-hero-content">
-                      <span className="tm-hero-subtitle">Liko Studio</span>
+                      <span className="tm-hero-subtitle">DigiHeads Studio</span>
                       <h4 className="tm-hero-title tp-char-animation">
                         Our latest & great projects
                       </h4>
@@ -71,7 +72,7 @@ const PortfolioWrapperMain = () => {
           </main>
 
           {/* footer area */}
-          <FooterTwo topCls="" />
+          <FooterFour/>
           {/* footer area */}
         </div>
       </div>

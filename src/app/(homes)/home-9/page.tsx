@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import HomeNineMain from '@/pages/homes/home-9';
 
 export const metadata: Metadata = {
-  title: "Liko - Home Nine Page",
+  title: "Digiheads",
 };
 
 const HomePageNine = () => {
