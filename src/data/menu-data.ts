@@ -121,18 +121,18 @@ const menu_data:IMenuDT[] = [
     //   }
     // }
   },
-  {
-    id: 4,
-    title: 'Blog',
-    link: '/blog-modern',
-    dropdown_menus: [
-      { title: 'Modern', link: '/blog-modern' },
-      { title: 'Classic Sidebar', link: '/blog-classic' },
-      { title: 'Minimal List', link: '/blog-list' },
-      { title: 'Post Single', link: '/blog-details/1' },
-      { title: 'Post With Sidebar', link: '/blog-details-2' },
-    ]
-  },
+  // {
+  //   id: 4,
+  //   title: 'Blog',
+  //   link: '/blog-modern',
+  //   // dropdown_menus: [
+  //   //   { title: 'Modern', link: '/blog-modern' },
+  //   //   { title: 'Classic Sidebar', link: '/blog-classic' },
+  //   //   { title: 'Minimal List', link: '/blog-list' },
+  //   //   { title: 'Post Single', link: '/blog-details/1' },
+  //   //   { title: 'Post With Sidebar', link: '/blog-details-2' },
+  //   // ]
+  // },
   {
     id: 5,
     title: 'Contact',

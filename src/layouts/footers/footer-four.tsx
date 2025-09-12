@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
-import logo from '@/assets/img/logo/logo-white.png';
+import logo from '@/assets/img/logo/DH.png';
+import logo1 from '@/assets/img/logo/White Text.png';
 import { RightArrow, SvgBgSm } from '@/components/svg';
 import Link from 'next/link';
 
@@ -13,7 +14,9 @@ export default function FooterFour() {
             <div className="col-xl-4 col-lg-6 col-md-6 mb-60">
               <div className="tp-footer-3-widget-wrapper footer-col-3-1">
                 <div className="tp-footer-3-widget mb-40">
-                  <h4 className="tp-footer-3-title">Website map</h4>
+                  <h4 className="tp-footer-3-title">
+                    DIGIHEADS
+                  </h4>
                   <div className="tp-footer-3-menu">
                     <ul>
                       <li><a href="#">Home</a></li>
@@ -51,7 +54,7 @@ export default function FooterFour() {
                     <Image src={logo} alt="logo" />
                   </Link>
                   <p className="tp-footer-3-copyright">
-                    {new Date().getFullYear()} Themepure <br /> © All rights reserved
+                    {new Date().getFullYear()} Digiheads.in <br /> © All rights reserved
                   </p>
                 </div>
               </div>
@@ -63,12 +66,12 @@ export default function FooterFour() {
                   <div className="tp-footer-2-contact-item">
                     <span>
                       <a href="https://www.google.com/maps/@23.8223596,90.3656686,15z?entry=ttu"
-                      target="_blank">740 NEW SOUTH HEAD RD, TRIPLE BAY SWFW 3108, NEW YORK</a>
+                      target="_blank">Delhi NCR, India</a>
                       </span>
                   </div>
                   <div className="tp-footer-2-contact-item">
                     <span>P: <a href="tel:+725214456">+ 725 214 456</a></span>
-                    <span>E: <a href="mailto:contact@liko.com">contact@liko.com</a></span>
+                    <span>E: <a href="mailto:contact@liko.com">info@digiheads.in</a></span>
                   </div>
                 </div>
                 <div className="tp-footer-3-widget">

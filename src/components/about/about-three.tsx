@@ -43,12 +43,11 @@ export default function AboutThree() {
           <div className="col-xl-6 col-lg-6 col-md-8">
             <div className="tp-about-3-content">
               <p className="mb-30 tp_fade_bottom">
-                We are a creative design studio based in London. We specialize
-                in Branding, and Web experiences for beauty.
+                DIGI HEADS is our flesh and blood. It’s everything we do. Be it from solving ones 
+                identity crisis or going digitally mad… we think we cover it all.
               </p>
               <p className="mb-45 tp_fade_bottom">
-                we’re all about digital experiences. The most creative idea and
-                the most perfect execution mean nothing.
+                So throw us a challenge, even if your pet dog needs an urgent makeover, we are up for it.
               </p>
               <Link className="tp-btn-black-2 tp_fade_bottom" href="/about-us">
                 About Us

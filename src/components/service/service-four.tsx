@@ -14,14 +14,26 @@ const service_data = [
   {
     id: 2,
     title: "Web/Mobile",
-    desc: "Once we have an idea of your needs, a research and design process begins to gain deep knowledge about the business, users <br> and world context.",
-    category: ["SEO", "Creative Development", "Varcel"],
+    desc: "Creation of user-friendly, responsive websites that effectively convey a brand's message.",
+    category: ["SEO", "Creative Development", "E-commerce", ],
   },
   {
     id: 3,
-    title: "Consulting",
-    desc: "Once we have an idea of your needs, a research and design process begins to gain deep knowledge about the business, users <br> and world context.",
-    category: ["Creative", "Digital strategy", "MVP"],
+    title: "Social Media Management",
+    desc: "we can help you increase your brand visibility resulting in higher brand awareness.",
+    category: ["Facebook ", "Instagram", "LinkedIn", "Community Management"],
+  },
+  {
+    id: 4,
+    title: "Advertising & Promotion",
+    desc: "Development of creative concepts, design & production of print, online and outdoor advertising campaigns.",
+    category: ["Paid Ads", "Campaign Management", "Brand Awareness"],
+  },
+  {
+    id: 4,
+    title: "Digital Strategy & Planing",
+    desc: "Implementing your vision, goals, and objectives in the digital space.",
+    category: ["Market Research", "Long time Plan", "Business Growth"],
   },
 ];
 export default function ServiceFour() {
@@ -66,7 +78,7 @@ export default function ServiceFour() {
               <div className="col-xl-7 col-lg-7">
                 <div className="tp-service-3-content">
                   <p dangerouslySetInnerHTML={{ __html: item.desc }}></p>
-                  <div className="tp-service-3-category">
+                  <div className="tp-service-3-category cat ">
                     {item.category.map((c, i) => (
                       <span key={i}>{c}</span>
                     ))}

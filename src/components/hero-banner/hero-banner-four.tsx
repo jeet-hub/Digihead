@@ -13,6 +13,9 @@ export default function HeroBannerFour() {
               <div className="tp-hero-3-circle-shape">
                 <span></span>
               </div>
+              <span className="tp-hero-3-category tp_reveal_anim">
+                DIGIHEADS
+              </span>
               <h4 className="tp-hero-3-title tp_reveal_anim">
                 <span className="tp-reveal-line">{"We're"} a high-end</span>
                 <span className="tp-reveal-line">digital agency</span>
