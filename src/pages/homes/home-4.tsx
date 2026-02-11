@@ -1,30 +1,51 @@
 "use client";
-import { gsap } from "gsap";
+
 import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+
 import useScrollSmooth from "@/hooks/use-scroll-smooth";
 import { ScrollSmoother, ScrollTrigger, SplitText } from "@/plugins";
-import { useGSAP } from "@gsap/react";
-gsap.registerPlugin(useGSAP, ScrollTrigger, ScrollSmoother, SplitText);
 
-// internal imports
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
+
+// ================= layouts =================
 import Wrapper from "@/layouts/wrapper";
-import HeaderFour from "@/layouts/headers/header-four";
-import HeroBannerFour from "@/components/hero-banner/hero-banner-four";
-import GalleryOne from "@/components/gallery/gallery-one";
-import AboutThree from "@/components/about/about-three";
-import BrandThree from "@/components/brand/brand-three";
-import ProjectFour from "@/components/project/project-four";
-import VideoThree from "@/components/video/video-three";
-import ServiceFour from "@/components/service/service-four";
-import ContactOne from "@/components/contact/contact-one";
+import HeaderTwo from "@/layouts/headers/header-two";
 import FooterFour from "@/layouts/footers/footer-four";
+
+// ================= OLD sections (DON'T TOUCH) =================
+import HeroBannerTwo from "@/components/hero-banner/hero-banner-two";
+import AboutOne from "@/components/about/about-one";
+
+
+import ServiceSix from "@/components/service/service-six";
+import ContactOne from "@/components/contact/contact-one";
+
+// ================= NEW sections =================
+import VideoTwo from "@/components/video/video-two";
+import ServiceTwo from "@/components/service/service-two";
+import ProjectTwo from "@/components/project/project-two";
+import AwardTwo from "@/components/award/award-two";
+import LineText from "@/components/line-text/line-text";
+import InstagramArea from "@/components/instagram/instagram-area";
+
+// ================= animations =================
 import { textInvert } from "@/utils/text-invert";
 import { fadeAnimation, revelAnimationOne } from "@/utils/title-animation";
 import { projectThreeAnimation } from "@/utils/project-anim";
 import { ctaAnimation } from "@/utils/cta-anim";
 
+// 🔥 IMPORTANT
+import { servicePanel, panelOneAnimation } from "@/utils/panel-animation";
+import { videoAnimTwo } from "@/utils/video-anim";
+import { awardAnimOne } from "@/utils/award-anim";
+import { instagramAnim } from "@/utils/instagram-anim";
+import { hoverBtn } from "@/utils/hover-btn";
+
 const HomeFourMain = () => {
   useScrollSmooth();
+
   useEffect(() => {
     document.body.classList.add("tp-smooth-scroll");
     return () => {
@@ -32,66 +53,61 @@ const HomeFourMain = () => {
     };
   }, []);
 
+  // ✅ ONE useGSAP — NOW COMPLETE
   useGSAP(() => {
     const timer = setTimeout(() => {
+      // ===== OLD animations =====
       fadeAnimation();
       revelAnimationOne();
       projectThreeAnimation();
       ctaAnimation();
       textInvert();
+      servicePanel(); // ServiceSix
+
+      // ===== NEW animations (REQUIRED) =====
+      videoAnimTwo();
+      panelOneAnimation(); // 🔥 FIX FOR ProjectTwo SLIDER
+      awardAnimOne();
+      instagramAnim();
+      hoverBtn();
     }, 100);
+
     return () => clearTimeout(timer);
   });
 
   return (
     <Wrapper>
-
-      {/* header area start */}
-      <HeaderFour />
-      {/* header area end */}
+      {/* <HeaderFour /> */}
+       <HeaderTwo />
 
       <div id="smooth-wrapper">
         <div id="smooth-content">
           <main>
+            {/* OLD */}
+             <HeroBannerTwo />
+              <AboutOne/>
+            {/* <HeroBannerFour /> */}
+            {/* <AboutThree /> */}
+            {/* <BrandThree /> */}
+            <div className="content" style={{margin:"0 20px"}}>
+        <AwardTwo />
+            </div>
+            
 
-            {/* hero area start */}
-            <HeroBannerFour />
-            {/* hero area end */}
+            {/* NEW */}
+            <VideoTwo />
+            <ServiceTwo />
+            <ProjectTwo />
+            
+            <LineText />
+            {/* <InstagramArea /> */}
 
-            {/* gallery area start */}
-            <GalleryOne />
-            {/* gallery area end */}
-
-            {/* about area start */}
-            <AboutThree />
-            {/* about area end */}
-
-            {/* brand area start */}
-            <BrandThree />
-            {/* brand area end */}
-
-
-            {/* project area start */}
-            <ProjectFour />
-            {/* project area end */}
-
-            {/* video area start */}
-            {/* <VideoThree /> */}
-            {/* video area end */}
-
-            {/* service area start */}
-            <ServiceFour />
-            {/* service area end */}
-
-            {/* contact area start */}
+            {/* OLD */}
+            <ServiceSix />
             <ContactOne />
-            {/* contact area end */}
-
           </main>
 
-          {/* footer area */}
           <FooterFour />
-          {/* footer area */}
         </div>
       </div>
     </Wrapper>

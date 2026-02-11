@@ -6,6 +6,8 @@ import { Cart } from "@/components/svg";
 import useSticky from "@/hooks/use-sticky";
 import CartOffcanvas from "@/components/offcanvas/cart-offcanvas";
 import MobileOffcanvasTwo from "@/components/offcanvas/mobile-offcanvas-2";
+import logo_1 from '@/assets/img/logo/Dh-b.png';
+import logo_2 from '@/assets/img/logo/DH-logo.png';
 
 
 export default function HeaderTwo() {
@@ -25,7 +27,7 @@ export default function HeaderTwo() {
                 <div className="tp-header-logo">
                   <Link className="logo-1" href="/">
                     <Image
-                      src="/assets/img/logo/logo.png"
+                      src={logo_1}
                       alt="logo"
                       width={85}
                       height={26}
@@ -33,7 +35,7 @@ export default function HeaderTwo() {
                   </Link>
                   <Link className="logo-2" href="/">
                     <Image
-                      src="/assets/img/logo/logo-white.png"
+                      src={logo_2}
                       alt="logo"
                       width={85}
                       height={26}
@@ -52,7 +54,7 @@ export default function HeaderTwo() {
               <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 d-none d-sm-block">
                 <div className="tp-header-2-cart text-end">
                   <button className="cartmini-open-btn" onClick={() => setOpenCartMini(true)}>
-                    Cart
+                    Get in touch
                     <span>
                       <Cart />
                     </span>

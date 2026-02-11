@@ -6,7 +6,7 @@ import Link from "next/link";
 const project_data = [
   {
     id: 1,
-    img: "/assets/img/home-02/project/project-1.jpg",
+    img: "/assets/img/home-02/project/Manatee.jpg",
     subtitle: "Concept",
     title: "High Lights",
   },
@@ -57,7 +57,7 @@ export default function ProjectTwo() {
             <div key={item.id} className="panel">
               <div className="tp-project-2-item  p-relative">
                 <div className="tp-project-2-thumb">
-                  <Image src={item.img} alt="p-img" width={890} height={700} />
+                  <Image src={item.img} alt="p-img" width={890} height={500} />
                 </div>
                 <div className="tp-project-2-content">
                   <span>{item.subtitle}</span>

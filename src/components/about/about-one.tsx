@@ -1,6 +1,8 @@
 'use client';
 import React, { CSSProperties } from 'react';
 import Image from 'next/image';
+import Link from "next/link";
+import { Leaf } from "../svg";
 // images
 import ab_1 from '@/assets/img/home-02/about/ab-1.jpg';
 import ab_2 from '@/assets/img/home-02/about/ab-2.jpg';
@@ -11,19 +13,26 @@ const imgStyle:CSSProperties = {height: "auto"};
 const AboutOne = () => {
 
   return (
-    <div className="tp-about-2-area pt-125 pb-200">
+    <div className="tp-about-2-area pt-25 pb-45">
       <div className="container container-1480">
         <div className="row justify-content-center">
           <div className="col-xxl-8 col-xl-10">
             <div className="tp-about-2-title-box tp-btn-trigger tp-btn-bounce mb-70 text-start text-xl-center">
-              <h2 className="tp-about-2-section-title">
-                Cooperation is possible within
-                various shapes and formats
+              <h2 className="tp-about-2-section-title" style={{fontSize:"35"}}>
+               Design shouldn’t just sit there looking pretty it should do something.
               </h2>
+               {/* <Link
+                      className="tp-btn-white"
+                      href="/portfolio-grid-col-3-fullwidth"
+                    >
+                      View More
+                      <span><Leaf /></span>
+                    </Link> */}
             </div>
+           
           </div>
         </div>
-        <div className="row align-items-center">
+        {/* <div className="row align-items-center">
           <div className="col-xl-5 col-lg-6 col-md-6 order-1 order-xl-0">
             <div className="tp-about-2-thumb-box p-relative">
               <div className="tp-about-2-thumb-main">
@@ -52,7 +61,7 @@ const AboutOne = () => {
               <Image data-speed="auto" src={ab_3} alt="ab-img" data-lag="0" style={imgStyle} />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

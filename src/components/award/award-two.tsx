@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import award_img from "@/assets/img/home-02/award/award-1.png";
+import award_img from "@/assets/img/home-02/award/float1.png";
 import Link from "next/link";
 import { UpArrow } from "../svg";
 
@@ -18,16 +18,16 @@ export default function AwardTwo() {
         <div className="row">
           <div className="col-xl-12">
             <div className="tp-award-2-title-box p-relative">
-              <span className="tp-award-2-subtitle">Accolades</span>
-              <h2 className="tp-award-2-title tp-award-title-1">award</h2>
+              <span className="tp-award-2-subtitle">About Us</span>
+              <h2 className="tp-award-2-title tp-award-title-1">DIGI</h2>
               <h2 className="tp-award-2-title tp-award-title-2">
-                <span>winning agency</span>
+                <span>HEADS</span>
               </h2>
               <p>
-                Quality is the common thread in everything we do. It’s not
-                something we say, it’s something we’ve been recognized for. And
-                we proudly hold these awards as a reminder of how the way you do
-                things matters.
+                Our simple belief: design shouldn’t just sit there looking pretty — 
+                it should do something. It should give you goosebumps. Start conversations. 
+                Make people say, “Wait… who did this?” We work with founders, startups, and 
+                ambitious teams who care about standing out.
               </p>
             </div>
             <div className="tp-award-2-btn-box">
@@ -38,7 +38,7 @@ export default function AwardTwo() {
                     href="/portfolio-details-1"
                   >
                     <span className="tp-btn-circle-text">
-                      See Our <br /> Awards
+                      About <br /> Us
                     </span>
                     <span className="tp-btn-circle-icon">
                       <UpArrow />

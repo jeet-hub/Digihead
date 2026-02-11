@@ -18,7 +18,7 @@ const VideoTwo = () => {
                 playsInline={true}
               >
                 <source
-                  src="https://html.hixstudio.net/videos/liko/liko-4.mp4"
+                  src="https://html.aqlova.com/videos/liko/liko.mp4"
                   type="video/mp4"
                 />
               </video>

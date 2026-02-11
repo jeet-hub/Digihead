@@ -302,6 +302,7 @@
             background-color: var(--tp-common-dark);
         }
         & .tp-about-2-section-title {
+            font-size: 56px !important;
             color: var(--tp-common-white);
         }
         & .tp-about-2-content span {
@@ -341,7 +342,10 @@
             background-color: var(--tp-common-dark);
         }
         & .tp-award-2-area.addclass {
-            background-color: var(--tp-common-dark);
+
+background: #14346C;
+background: radial-gradient(at center, #14346C, #010101);
+            // background-color: var(--tp-common-dark);
         }
         & .tp-instagram-subtitle {
             color: var(--tp-common-white);

@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import logo_1 from "@/assets/img/logo/logo.png";
-import logo_2 from "@/assets/img/logo/logo-white.png";
+import logo_1 from '@/assets/img/logo/Dh-b.png';
+import logo_2 from '@/assets/img/logo/DH-logo.png';
 import { CloseThree, CloseTwo } from "../svg";
 import Link from "next/link";
 import MobileMenusTwo from "./mobile-menus-2";
@@ -66,7 +66,7 @@ export default function MobileOffcanvasTwo({openOffcanvas,setOpenOffcanvas}:IPro
               </div>
               <div className="tpoffcanvas__mail">
                 <a href="mailto:hellocontact@diego.com">
-                  hello contact@diego.com
+                  info@digiheads.in
                 </a>
               </div>
               <div className="tpoffcanvas__text">

@@ -37,7 +37,7 @@ const service_accordion = [
 ];
 export default function ServiceTwo() {
   return (
-    <div className="tp-service-2-area tp-service-2-pt  pb-150 z-index-5">
+    <div className="tp-service-2-area tp-service-2-pt  pb-0 z-index-5">
       <div className="container container-1480">
         <div className="row">
           <div className="col-xl-8">
@@ -46,16 +46,16 @@ export default function ServiceTwo() {
                 <span>
                   <Leaf />
                 </span>
-                SERVICES
+                PROJECTS
               </span>
               <h4 className="tp-section-title-40">
-                Strategy, design and implementation as an effective complete
-                solution. Your authentic website as a digital customer magnet.
+                We obsess over details to build brands with an aura. Because good design looks nice. 
+                But great design? It lives in your head, rent-free.
               </h4>
             </div>
           </div>
         </div>
-        <div className="row align-items-center">
+        {/* <div className="row align-items-center">
           <div className="col-xxl-6 col-xl-4 col-lg-4">
             <div className="tp-service-2-shape-img text-center text-lg-start">
               <Image src={shape} alt="" />
@@ -96,7 +96,7 @@ export default function ServiceTwo() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

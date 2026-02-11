@@ -11,7 +11,9 @@ import Wrapper from "@/layouts/wrapper";
 import HeaderThree from "@/layouts/headers/header-three";
 import HeroBannerThree from "@/components/hero-banner/hero-banner-three";
 import AboutTwo from "@/components/about/about-two";
-import ServiceThree from "@/components/service/service-three";
+// import ServiceThree from "@/components/service/service-three";
+import ServiceSix from "@/components/service/service-six";
+import ServiceOne from "@/components/service/service-one";
 import LineTextTwo from "@/components/line-text/line-text-2";
 import ProjectThree from "@/components/project/project-three";
 import BrandTwo from "@/components/brand/brand-two";
@@ -70,8 +72,11 @@ const HomeThreeMain = () => {
             </div>
 
             {/* service area start */}
-            <ServiceThree />
+            <ServiceOne />
             {/* service area end */}
+             {/* service area */}
+                        <ServiceSix />
+                        {/* service area */}
 
             {/* marquee text */}
             <LineTextTwo />
