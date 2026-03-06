@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/assets/img/logo/logo-white.png";
-import logo_2 from "@/assets/img/logo/logo.png";
 import { RightArrow } from "@/components/svg";
+import logo_1 from '@/assets/img/logo/Dh-b.png';
+import logo_2 from '@/assets/img/logo/DH-logo.png';
 
 // prop type
 type IProps = {
@@ -26,7 +26,7 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
                 {!whiteFooter && (
                   <div className="tp-footer-2-widget-logo">
                     <Link href="/">
-                      <Image src={logo} alt="logo" />
+                      <Image src={logo_2} alt="logo_1" />
                     </Link>
                   </div>
                 )}
@@ -36,13 +36,13 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
                       <Image src={logo_2} alt="logo" />
                     </Link>
                     <Link className="logo-2" href="/">
-                      <Image src={logo} alt="logo" />
+                      <Image src={logo_2} alt="logo" />
                     </Link>
                   </div>
                 )}
                 <div className="tp-footer-2-widget-text">
                   <p>
-                    Drop us a line sed id semper <br /> risus in hend rerit.
+                  Design shouldn’t just sit there looking pretty it should do something.
                   </p>
                 </div>
               </div>
@@ -52,11 +52,10 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
                 <div className="tp-footer-2-widget-menu">
                   <h4 className="tp-footer-2-widget-title">Sitemap</h4>
                   <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="https://www.digiheads.in/">Home</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
-                    <li> <a href="#">Blog</a></li>
-                    <li><a href="#">Landing</a></li>
+                  
                   </ul>
                 </div>
               </div>
@@ -70,18 +69,19 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
                       href="https://www.google.com/maps/@23.8223596,90.3656686,15z?entry=ttu"
                       target="_blank"
                     >
-                      740 NEW SOUTH HEAD RD, TRIPLE BAY SWFW 3108, NEW YORK
+                      Delhi NCR, India
                     </a>
                   </span>
                 </div>
                 <div className="tp-footer-2-contact-item">
                   <span>
-                    <a href="tel:+725214456">P: + 725 214 456</a>
+                    <a href="tel:+725214456">P: +91 9958683924</a><br />
+                      <a href="tel:+725214456">P: +91 9955864367</a>
                   </span>
                 </div>
                 <div className="tp-footer-2-contact-item">
                   <span>
-                    <a href="mailto:contact@liko.com">E: contact@liko.com</a>
+                    <a href="mailto:contact@liko.com">E: info@digiheads.in</a>
                   </span>
                 </div>
               </div>
@@ -117,15 +117,15 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
             <div className="col-xl-4 col-lg-5">
               <div className="tp-copyright-2-left text-center text-lg-start">
                 <p>
-                  All rights reserved — {new Date().getFullYear()} © Themepure
+                  All rights reserved — {new Date().getFullYear()} © Digiheads
                 </p>
               </div>
             </div>
             <div className="col-xl-8 col-lg-7">
               <div className="tp-copyright-2-social text-center text-lg-end">
-                <a className="mb-10" href="#">Linkedin</a>
-                <a className="mb-10" href="#">Twitter</a>
-                <a className="mb-10" href="#">Instagram</a>
+                <a className="mb-10" href="https://www.instagram.com/digiheads.in?igsh=eWhoaTRyMXhienk0">Linkedin</a>
+                <a className="mb-10" href="https://www.instagram.com/digiheads.in?igsh=eWhoaTRyMXhienk0">Twitter</a>
+                <a className="mb-10" href="https://www.instagram.com/digiheads.in?igsh=eWhoaTRyMXhienk0">Instagram</a>
               </div>
             </div>
           </div>
