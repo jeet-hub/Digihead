@@ -62,10 +62,10 @@ export default function MobileOffcanvasTwo({openOffcanvas,setOpenOffcanvas}:IPro
           <div className="tp-offcanvas-2-right-inner d-flex flex-column justify-content-between h-100">
             <div className="tpoffcanvas__right-info">
               <div className="tpoffcanvas__tel">
-                <a href="tel:61404093954">+61404093 954</a>
+                <a href="tel:9958683924,">+91 9958683924,</a>
               </div>
               <div className="tpoffcanvas__mail">
-                <a href="mailto:hellocontact@diego.com">
+                <a href="mailto:Info@digiheads.in">
                   info@digiheads.in
                 </a>
               </div>
@@ -75,10 +75,10 @@ export default function MobileOffcanvasTwo({openOffcanvas,setOpenOffcanvas}:IPro
             </div>
             <div className="tpoffcanvas__social-link">
               <ul>
-                <li><a href="#">Dribbble</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Linkedin</a></li>
-                <li><a href="#">Behance</a></li>
+                
+                <li><a href="https://www.instagram.com/digiheads.in?igsh=eWhoaTRyMXhienk0">Instagram</a></li>
+                <li><a href="https://www.instagram.com/digiheads.in?igsh=eWhoaTRyMXhienk0">Linkedin</a></li>
+                <li><a href="https://www.instagram.com/digiheads.in?igsh=eWhoaTRyMXhienk0">Behance</a></li>
               </ul>
             </div>
           </div>

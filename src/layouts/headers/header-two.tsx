@@ -55,9 +55,9 @@ export default function HeaderTwo() {
                 <div className="tp-header-2-cart text-end">
                   <button className="cartmini-open-btn" onClick={() => setOpenCartMini(true)}>
                     Get in touch
-                    <span>
+                    {/* <span>
                       <Cart />
-                    </span>
+                    </span> */}
                   </button>
                 </div>
               </div>

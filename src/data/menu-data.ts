@@ -179,8 +179,8 @@ export const mobile_menu_data:{
   },
   {
     id: 2,
-    title: 'Pages',
-    link: '#',
+    title: 'About Us',
+    link: '/about-us',
     // dropdown_menus:[
     //   { title: 'ABOUT US', link: '/about-us' },
     //   { title: 'FAQ Page', link: '/faq' },
@@ -205,14 +205,14 @@ export const mobile_menu_data:{
   },
   {
     id: 3,
-    title: 'Portfolio',
-    link: '/portfolio-standard',
+    title: 'Projects',
+    link: '/portfolio-wrapper',
     
   },
   {
     id: 4,
-    title: 'Blog',
-    link: '/blog-modern',
+    title: 'Services',
+    link: '/service',
   
   },
   {
