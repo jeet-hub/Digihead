@@ -31,12 +31,12 @@ export default function MobileMenusTwo() {
               className="tp-submenu submenu"
               style={{ display: navTitle === menu.title ? "block" : "none" }}
             >
-              {menu.dropdown_menus &&
+              {/* {menu.dropdown_menus &&
                 menu.dropdown_menus.map((dm, i) => (
                   <li key={i}>
                     <Link href={dm.link}>{dm.title}</Link>
                   </li>
-                ))}
+                ))} */}
             </ul>
           </li>
         ))}
