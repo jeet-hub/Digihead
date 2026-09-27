@@ -70,7 +70,7 @@ export default function MobileOffcanvasTwo({openOffcanvas,setOpenOffcanvas}:IPro
                 </a>
               </div>
               <div className="tpoffcanvas__text">
-                <p>If in doubt. reach out.</p>
+                {/* <p>If in doubt. reach out.</p> */}
               </div>
             </div>
             <div className="tpoffcanvas__social-link">

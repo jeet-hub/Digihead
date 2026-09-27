@@ -12,7 +12,7 @@ const project_data = [
   },
   {
     id: 2,
-    img: "/assets/img/home-02/project/project-2.jpg",
+    img: "/assets/img/home-02/project/adidas-running.png",
     subtitle: "Branding",
     title: "Fashion",
   },
