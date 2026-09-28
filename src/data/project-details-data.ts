@@ -12,10 +12,7 @@ export const project_details_data = [
     deliverables: "UI / UX Design",
 
     images: [
-      "/assets/img/inner-project/portfolio-details/port-details-1.jpg",
-      "/assets/img/inner-project/portfolio-details/port-details-2.jpg",
-      "/assets/img/inner-project/portfolio-details/port-details-3.jpg",
-      "/assets/img/inner-project/portfolio-details/port-details-4.jpg",
+       "/assets/img/home-02/project/manatee-details.jpg",
     ],
   },
 
