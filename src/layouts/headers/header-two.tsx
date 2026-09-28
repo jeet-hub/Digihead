@@ -53,14 +53,19 @@ export default function HeaderTwo() {
               </div>
               <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-6 d-none d-sm-block">
                 <div className="tp-header-2-cart text-end">
-                  <button className="cartmini-open-btn" onClick={() => setOpenCartMini(true)}>
+                  {/* <button className="cartmini-open-btn" onClick={() => setOpenCartMini(true)}>
                     Get in touch
-                    {/* <span>
+                    <span>
                       <Cart />
-                    </span> */}
-                  </button>
+                    </span> 
+                  </button> */}
+                 <button className="cartmini-open-btn">
+                  <Link href="/contact" className="cartmini-open-btn"/>
+                  Get in touch
+                </button>
                 </div>
               </div>
+            
             </div>
           </div>
         </div>

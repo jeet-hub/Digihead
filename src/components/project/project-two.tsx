@@ -62,7 +62,9 @@ export default function ProjectTwo() {
                 <div className="tp-project-2-content">
                   <span>{item.subtitle}</span>
                   <h4 className="tp-project-2-title-sm">
-                    <Link href="/portfolio-details-1">{item.title}</Link>
+                   <Link href={`/portfolio-details-1?id=${item.id}`}>
+                    {item.title}
+                  </Link>
                   </h4>
                 </div>
               </div>

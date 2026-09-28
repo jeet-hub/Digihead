@@ -1,34 +1,93 @@
 "use client";
-import { gsap } from "gsap";
+
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import { useSearchParams } from "next/navigation";
+import { project_details_data } from "./project-details-data";
+
+import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
+
 import useScrollSmooth from "@/hooks/use-scroll-smooth";
 import { ScrollSmoother, ScrollTrigger, SplitText } from "@/plugins";
+
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
-// internal imports
+// Internal imports
 import Wrapper from "@/layouts/wrapper";
 import HeaderEleven from "@/layouts/headers/header-eleven";
 import Social from "@/components/social/social";
 import { Dots, Share } from "@/components/svg";
 import { projectDetailsPin } from "@/utils/project-anim";
 import FooterTwo from "@/layouts/footers/footer-two";
-// animation
-import {charAnimation,titleAnimation} from "@/utils/title-animation";
 
+// Animation
+import {
+  charAnimation,
+  titleAnimation,
+} from "@/utils/title-animation";
 
-// images
-import port_d_1 from '@/assets/img/inner-project/portfolio-details/port-details-1.jpg';
-import port_d_2 from '@/assets/img/inner-project/portfolio-details/port-details-2.jpg';
-import port_d_3 from '@/assets/img/inner-project/portfolio-details/port-details-3.jpg';
-import port_d_4 from '@/assets/img/inner-project/portfolio-details/port-details-4.jpg';
-
-const port_images = [port_d_1, port_d_2, port_d_3, port_d_4];
 
 const PortfolioDetailsOneMain = () => {
   const [showSocial, setShowSocial] = React.useState(false);
+
+  const searchParams = useSearchParams();
+
   useScrollSmooth();
+
+  /*
+  |--------------------------------------------------------------------------
+  | GET PROJECT ID FROM URL
+  |--------------------------------------------------------------------------
+  |
+  | /portfolio-details-1?id=1
+  | /portfolio-details-1?id=2
+  | /portfolio-details-1?id=3
+  |
+  */
+
+  const projectId = Number(searchParams.get("id")) || 1;
+
+  /*
+  |--------------------------------------------------------------------------
+  | FIND PROJECT
+  |--------------------------------------------------------------------------
+  */
+
+  const project =
+    project_details_data.find((item) => item.id === projectId) ||
+    project_details_data[0];
+
+  /*
+  |--------------------------------------------------------------------------
+  | NEXT / PREVIOUS PROJECT
+  |--------------------------------------------------------------------------
+  */
+
+  const currentIndex = project_details_data.findIndex(
+    (item) => item.id === project.id
+  );
+
+  const prevProject =
+    project_details_data[
+      currentIndex <= 0
+        ? project_details_data.length - 1
+        : currentIndex - 1
+    ];
+
+  const nextProject =
+    project_details_data[
+      currentIndex >= project_details_data.length - 1
+        ? 0
+        : currentIndex + 1
+    ];
+
+  /*
+  |--------------------------------------------------------------------------
+  | GSAP ANIMATION
+  |--------------------------------------------------------------------------
+  */
 
   useGSAP(() => {
     const timer = setTimeout(() => {
@@ -36,102 +95,304 @@ const PortfolioDetailsOneMain = () => {
       titleAnimation();
       projectDetailsPin();
     }, 100);
+
     return () => clearTimeout(timer);
-  });
+  }, [project.id]);
 
   return (
     <Wrapper>
-      {/* header area start */}
-      <HeaderEleven cls="tp-inner-header-border"/>
-      {/* header area end */}
+
+      {/* =====================================================
+          HEADER
+      ===================================================== */}
+
+      <HeaderEleven cls="tp-inner-header-border" />
+
+
+      {/* =====================================================
+          SMOOTH SCROLL
+      ===================================================== */}
 
       <div id="smooth-wrapper">
+
         <div id="smooth-content">
+
           <main>
-            {/* portfolio details area */}
+
+            {/* =================================================
+                PORTFOLIO DETAILS
+            ================================================= */}
+
             <div className="project-details-1-area project-details-1-pt">
-               <div className="container-fluid p-0">
-                  <div className="row g-0">
-                     <div className="col-xl-7">
-                        <div className="project-details-1-left">
-                          {port_images.map((imgSrc, i) => (
-                           <div key={i} className="project-details-1-thumb mb-10">
-                              <Image src={imgSrc} alt="port-img" style={{height:"auto"}}/>
-                           </div>
-                          ))}
+
+              <div className="container-fluid p-0">
+
+                <div className="row g-0">
+
+
+                  {/* =================================================
+                      LEFT SIDE - PROJECT IMAGES
+                  ================================================= */}
+
+                  <div className="col-xl-7">
+
+                    <div className="project-details-1-left">
+
+                      {project.images.map((imgSrc, index) => (
+
+                        <div
+                          key={index}
+                          className="project-details-1-thumb mb-10"
+                        >
+
+                          <Image
+                            src={imgSrc}
+                            alt={`${project.title} - ${index + 1}`}
+                            width={1200}
+                            height={800}
+                            style={{
+                              width: "100%",
+                              height: "auto",
+                            }}
+                            priority={index === 0}
+                          />
+
                         </div>
-                     </div>
-                     <div className="col-xl-5">
-                        <div className="project-details-1-right-wrap">
-                           <div className="project-details-1-right p-relative">
-                              <div className="project-details-1-title-box">
-                                 <span className="project-details-1-subtitle"><i>01</i>Shooting</span>
-                                 <h4 className="project-details-1-title">Roadtrip</h4>
-                                 <p>We provide digital experience services to startups and
-                                    small businesses. We help our clients succeed by creating
-                                    brand identities, digital experiences.!</p>
-                              </div>
-                              <div className="project-details-1-info-wrap">
-                                 <div className="project-details-1-info">
-                                    <span>Client</span>
-                                    <h4>Factor SF & Google</h4>
-                                 </div>
-                                 <div className="project-details-1-info">
-                                    <span>Date</span>
-                                    <h4>October {"'2022"}</h4>
-                                 </div>
-                                 <div className="project-details-1-info">
-                                    <span>Services</span>
-                                    <h4>Design & Prototyping</h4>
-                                 </div>
-                                 <div className="project-details-1-info">
-                                    <span>Deliverables</span>
-                                    <h4>UI / UX Design</h4>
-                                 </div>
-                              </div>
-                              <div className="project-details-1-social">
-                                 {showSocial && <div className="project-details-1-social-inner">
-                                    <Social/>
-                                 </div>}
-                                 <div className="project-details-1-social-main">
-                                    <a className="share-icon pointer" onClick={() => setShowSocial(!showSocial)}>
-                                       <span>
-                                          <Share/>
-                                       </span>
-                                    </a>
-                                 </div>
-                              </div>
-                           </div>
-                           <div className="project-details-1-navigation d-flex justify-content-between align-items-center">
-                              <a className="project-details-1-prev" href="#">
-                                 <i className="fa-sharp fa-regular fa-arrow-left"></i>
-                                 <span>Prev</span>
-                              </a>
-                              <a href="#">
-                                 <span>
-                                    <Dots/>
-                                 </span>
-                              </a>
-                              <a className="project-details-1-next" href="#">
-                                 <span>Next</span>
-                                 <i className="fa-sharp fa-regular fa-arrow-right"></i>
-                              </a>
-                           </div>
-                        </div>
-                     </div>
+
+                      ))}
+
+                    </div>
+
                   </div>
-               </div>
+
+
+                  {/* =================================================
+                      RIGHT SIDE
+                  ================================================= */}
+
+                  <div className="col-xl-5">
+
+                    <div className="project-details-1-right-wrap">
+
+                      <div className="project-details-1-right p-relative">
+
+
+                        {/* =========================================
+                            TITLE
+                        ========================================= */}
+
+                        <div className="project-details-1-title-box">
+
+                          <span className="project-details-1-subtitle">
+
+                            <i>{project.number}</i>
+
+                            {project.category}
+
+                          </span>
+
+
+                          <h4 className="project-details-1-title">
+
+                            {project.title}
+
+                          </h4>
+
+
+                          <p>
+
+                            {project.description}
+
+                          </p>
+
+                        </div>
+
+
+                        {/* =========================================
+                            PROJECT INFORMATION
+                        ========================================= */}
+
+                        <div className="project-details-1-info-wrap">
+
+
+                          {/* CLIENT */}
+
+                          <div className="project-details-1-info">
+
+                            <span>
+                              Client
+                            </span>
+
+                            <h4>
+                              {project.client}
+                            </h4>
+
+                          </div>
+
+
+                          {/* DATE */}
+
+                          <div className="project-details-1-info">
+
+                            <span>
+                              Date
+                            </span>
+
+                            <h4>
+                              {project.date}
+                            </h4>
+
+                          </div>
+
+
+                          {/* SERVICES */}
+
+                          <div className="project-details-1-info">
+
+                            <span>
+                              Services
+                            </span>
+
+                            <h4>
+                              {project.services}
+                            </h4>
+
+                          </div>
+
+
+                          {/* DELIVERABLES */}
+
+                          <div className="project-details-1-info">
+
+                            <span>
+                              Deliverables
+                            </span>
+
+                            <h4>
+                              {project.deliverables}
+                            </h4>
+
+                          </div>
+
+                        </div>
+
+
+                        {/* =========================================
+                            SOCIAL SHARE
+                        ========================================= */}
+
+                        <div className="project-details-1-social">
+
+                          {showSocial && (
+
+                            <div className="project-details-1-social-inner">
+
+                              <Social />
+
+                            </div>
+
+                          )}
+
+
+                          <div className="project-details-1-social-main">
+
+                            <a
+                              className="share-icon pointer"
+                              onClick={() =>
+                                setShowSocial(!showSocial)
+                              }
+                            >
+
+                              <span>
+                                <Share />
+                              </span>
+
+                            </a>
+
+                          </div>
+
+                        </div>
+
+                      </div>
+
+
+                      {/* =================================================
+                          PREVIOUS / NEXT NAVIGATION
+                      ================================================= */}
+
+                      <div className="project-details-1-navigation d-flex justify-content-between align-items-center">
+
+
+                        {/* PREVIOUS */}
+
+                        <Link
+                          className="project-details-1-prev"
+                          href={`/portfolio-details-1?id=${prevProject.id}`}
+                        >
+
+                          <i className="fa-sharp fa-regular fa-arrow-left"></i>
+
+                          <span>
+                            Prev
+                          </span>
+
+                        </Link>
+
+
+                        {/* DOTS */}
+
+                        <Link href="/portfolio-wrapper">
+
+                          <span>
+                            <Dots />
+                          </span>
+
+                        </Link>
+
+
+                        {/* NEXT */}
+
+                        <Link
+                          className="project-details-1-next"
+                          href={`/portfolio-details-1?id=${nextProject.id}`}
+                        >
+
+                          <span>
+                            Next
+                          </span>
+
+                          <i className="fa-sharp fa-regular fa-arrow-right"></i>
+
+                        </Link>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
             </div>
-            {/* portfolio details area */}
+
           </main>
 
-          {/* footer area */}
+
+          {/* =====================================================
+              FOOTER
+          ===================================================== */}
+
           <FooterTwo topCls="" />
-          {/* footer area */}
+
         </div>
+
       </div>
+
     </Wrapper>
   );
 };
+
 
 export default PortfolioDetailsOneMain;
