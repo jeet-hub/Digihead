@@ -4,7 +4,7 @@ import React, { Suspense } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { project_details_data } from "./project-details-data";
+import { project_details_data } from "../../../data/project-details-data";
 
 import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
