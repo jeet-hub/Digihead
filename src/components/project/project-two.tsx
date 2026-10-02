@@ -7,7 +7,7 @@ const project_data = [
   
   {
     id: 1,
-    img: "/assets/img/home-02/project/adidas-main.jpg",
+    img: "/assets/img/home-02/project/adidas.jpg",
     subtitle: "Socail Media & Event Promotion",
     title: "Adidas Runners",
   },
