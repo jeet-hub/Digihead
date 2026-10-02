@@ -130,12 +130,7 @@ const PortfolioDetailsOneContent = () => {
 
                         {/* PROJECT INFORMATION */}
                         <div className="project-details-1-info-wrap">
-                          {/* CLIENT */}
-                          <div className="project-details-1-info">
-                            <span>Client</span>
-                            <h4>{project.client}</h4>
-                          </div>
-
+                         
                           {/* DATE */}
                           <div className="project-details-1-info">
                             <span>Date</span>
@@ -146,12 +141,6 @@ const PortfolioDetailsOneContent = () => {
                           <div className="project-details-1-info">
                             <span>Services</span>
                             <h4>{project.services}</h4>
-                          </div>
-
-                          {/* DELIVERABLES */}
-                          <div className="project-details-1-info">
-                            <span>Deliverables</span>
-                            <h4>{project.deliverables}</h4>
                           </div>
                         </div>
 

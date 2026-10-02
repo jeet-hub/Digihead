@@ -105,7 +105,10 @@ const HomeMain = () => {
 
             {/* ADDED */}
             <ServiceSix />
-            <ContactOne />
+            {/* <ContactOne /> */}
+            {/* footer area */}
+            <FooterTwo topCls="" />
+            {/* footer area */}
           </main>
 
           <FooterTwo />

@@ -65,16 +65,14 @@ const PortfolioGridColThreeMain = () => {
                 <div className="row">
                   <div className="col-xl-12">
                     <div className="tm-hero-content">
-                      <span className="tm-hero-subtitle">Liko Studio</span>
+                      <span className="tm-hero-subtitle">Digi Heads</span>
                       <h4 className="tm-hero-title fs-220 tp-char-animation">
-                        Classic Grid
+                        Projects
                       </h4>
                     </div>
                     <div className="tm-hero-text tp_title_anim">
                       <p>
-                        We’re a diverse team that works as fancies attention to
-                        details, enjoys beers on Friday nights and aspires to
-                        design the dent in the universe.
+                        We are a creative agency that specializes in branding, design, and digital marketing. Our team of experts is dedicated to helping businesses grow and succeed in the digital world. We work closely with our clients to understand their unique needs and goals, and we develop customized strategies to help them achieve success.
                       </p>
                     </div>
                   </div>

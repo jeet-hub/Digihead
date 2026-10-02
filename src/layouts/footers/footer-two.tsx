@@ -73,12 +73,12 @@ export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: I
                     </a>
                   </span>
                 </div>
-                <div className="tp-footer-2-contact-item">
+                {/* <div className="tp-footer-2-contact-item">
                   <span>
                     <a href="tel:+725214456">P: +91 9958683924</a><br />
                       <a href="tel:+725214456">P: +91 9955864367</a>
                   </span>
-                </div>
+                </div> */}
                 <div className="tp-footer-2-contact-item">
                   <span>
                     <a href="mailto:contact@liko.com">E: info@digiheads.in</a>

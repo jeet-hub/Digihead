@@ -4,47 +4,48 @@ import Image from "next/image";
 import Link from "next/link";
 
 const project_data = [
+  
   {
     id: 1,
-    img: "/assets/img/home-02/project/Manatee.jpg",
-    subtitle: "Concept",
-    title: "High Lights",
+    img: "/assets/img/home-02/project/adidas-main.jpg",
+    subtitle: "Socail Media & Event Promotion",
+    title: "Adidas Runners",
   },
   {
     id: 2,
-    img: "/assets/img/home-02/project/adidas-running.png",
-    subtitle: "Branding",
-    title: "Fashion",
+    img: "/assets/img/home-02/project/daily-g.jpeg",
+    subtitle: "Brand Identity Toolkit & Advertising",
+    title: "Daily Grocery",
   },
   {
     id: 3,
-    img: "/assets/img/home-02/project/project-3.jpg",
-    subtitle: "Concept",
-    title: "Branding",
+    img: "/assets/img/home-02/project/Manatee.jpg",
+    subtitle: "Brand Identity Toolkit",
+    title: "Manatee",
   },
   {
     id: 4,
-    img: "/assets/img/home-02/project/project-4.jpg",
-    subtitle: "Concept",
-    title: "High Lights",
+    img: "/assets/img/home-02/project/atomy-main.jpg",
+    subtitle: "Social Media Creatives",
+    title: "Atomy",
   },
   {
     id: 5,
-    img: "/assets/img/home-02/project/project-5.jpg",
-    subtitle: "Concept",
-    title: "High Lights",
+    img: "/assets/img/home-02/project/ganga-county-main.jpg",
+    subtitle: "Social Media Creatives & Advertising",
+    title: "Ganga County",
   },
   {
     id: 6,
     img: "/assets/img/home-02/project/project-6.jpg",
-    subtitle: "Branding",
-    title: "Fashion",
+    subtitle: "Bus Exterior Branding",
+    title: "Indian Air Force",
   },
   {
     id: 7,
     img: "/assets/img/home-02/project/project-7.jpg",
-    subtitle: "Concept",
-    title: "Branding",
+    subtitle: "Coffee Table Book Design",
+    title: "Varanasi Government",
   },
 ];
 
