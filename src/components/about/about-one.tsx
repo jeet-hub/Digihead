@@ -17,7 +17,7 @@ const AboutOne = () => {
       <div className="container container-1480">
         <div className="row justify-content-center">
           <div className="col-xxl-8 col-xl-10">
-            <div className="tp-about-2-title-box tp-btn-trigger tp-btn-bounce mb-70 text-start text-xl-center">
+            <div className="tp-about-2-title-box tp-btn-trigger tp-btn-bounce mb-0 text-start text-xl-center">
               <h2 className="tp-about-2-section-title" style={{fontSize:"35"}}>
                Design shouldn’t just sit there looking pretty it should do something.
               </h2>

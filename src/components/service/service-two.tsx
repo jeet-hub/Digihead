@@ -48,7 +48,7 @@ export default function ServiceTwo() {
                 </span>
                 PROJECTS
               </span>
-              <h4 className="tp-section-title-40">
+              <h4 className="tp-section-title-10">
                 We obsess over details to build brands with an aura. Because good design looks nice. 
                 But great design? It lives in your head, rent-free.
               </h4>

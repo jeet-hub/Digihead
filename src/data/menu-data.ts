@@ -116,7 +116,7 @@ const menu_data: IMenuDT[] = [
   {
     id: 3,
     title: "Projects",
-    link: "/portfolio-wrapper",
+    link: "/portfolio-grid-col-3",
 
     // portfolio_mega_menus: {
     //   first: {
@@ -264,14 +264,14 @@ export const mobile_menu_data: MobileMenuItem[] = [
 
   {
     id: 2,
-    title: "About Us",
+    title: "About",
     link: "/about-us",
   },
 
   {
     id: 3,
     title: "Projects",
-    link: "/portfolio-wrapper",
+    link: "/portfolio-grid-col-3",
   },
 
   {

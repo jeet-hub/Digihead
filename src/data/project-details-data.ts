@@ -89,7 +89,7 @@ export const project_details_data = [
 
 
     images: [
-     "/assets/img/home-02/project/indian-air-force.webp",
+     "/assets/img/home-02/project/indian-air-force.jpg",
     ],
   },
 
@@ -104,10 +104,7 @@ export const project_details_data = [
     services: "Coffee Table Book Design",
 
     images: [
-      "/assets/img/inner-project/portfolio-details/port-details-1.jpg",
-      "/assets/img/inner-project/portfolio-details/port-details-2.jpg",
-      "/assets/img/inner-project/portfolio-details/port-details-3.jpg",
-      "/assets/img/inner-project/portfolio-details/port-details-4.jpg",
+     "/assets/img/home-02/project/var-p.jpg",
     ],
   },
 ];

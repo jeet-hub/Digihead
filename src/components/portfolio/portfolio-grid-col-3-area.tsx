@@ -57,7 +57,7 @@ const portfolio_data = [
 
   {
     id: 6,
-    img: "/assets/img/home-02/project/project-6.jpg",
+    img: "/assets/img/home-02/project/IAF-main.jpg",
     category: "Bus Exterior Branding",
     title: "Indian Air Force",
     year: "2026",
@@ -66,7 +66,7 @@ const portfolio_data = [
 
   {
     id: 7,
-    img: "/assets/img/home-02/project/project-7.jpg",
+    img: "/assets/img/home-02/project/van.jpg",
     category: "Coffee Table Book Design",
     title: "Varanasi Government",
     year: "2026",

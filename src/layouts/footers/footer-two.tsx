@@ -13,7 +13,16 @@ type IProps = {
 
 export default function FooterTwo({ whiteFooter = false,topCls='footer-top' }: IProps) {
   return (
-    <footer className={`${topCls}`}>
+    <footer 
+    className={topCls}
+  style={{
+    position: "relative",
+    zIndex: 9999,
+    display: "block",
+    visibility: "visible",
+    opacity: 1,
+  }}
+    >
       <div
         className={`tp-footer-2-area pt-100 pb-20 ${
           whiteFooter ? "tp-footer-white" : "black-bg"

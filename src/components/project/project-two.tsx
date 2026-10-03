@@ -37,13 +37,13 @@ const project_data = [
   },
   {
     id: 6,
-    img: "/assets/img/home-02/project/project-6.jpg",
+    img: "/assets/img/home-02/project/IAF-main.jpg",
     subtitle: "Bus Exterior Branding",
     title: "Indian Air Force",
   },
   {
     id: 7,
-    img: "/assets/img/home-02/project/project-7.jpg",
+    img: "/assets/img/home-02/project/van.jpg",
     subtitle: "Coffee Table Book Design",
     title: "Varanasi Government",
   },
@@ -62,7 +62,7 @@ export default function ProjectTwo() {
                 </div>
                 <div className="tp-project-2-content">
                   <span>{item.subtitle}</span>
-                  <h4 className="tp-project-2-title-sm">
+                  <h4 className="tp-project-2-title-sm text-shadow-xl">
                    <Link href={`/portfolio-details-1?id=${item.id}`}>
                     {item.title}
                   </Link>
