@@ -6,9 +6,9 @@ export const project_details_data = [
     category: "Social Media & Event Promotion",
     title: "Adidas Runners",
     description:
-      "A modern digital experience created with a strong visual identity and engaging user experience.",
-    date: "2022",
-    services: "Social Media & Event Promotion",
+      "we worked with Adidas Runners to bring their running community and events to life through bold, high-energy design. As part of a collaboration with Fit India, From the Faster Than Ever Festival to the Run Wild , we created the visual direction and event creatives that shaped the experience across multiple touchpoints. We also designed calendars and communication creatives for their coaches, trainers, and athletes, along with a range of event-specific branding and social assets. The idea was to keep everything feeling energetic, youthful, and true to the spirit of the running community.",
+    date: "2020",
+    services: "Social media and event campaign",
 
     images: [
       "/assets/img/home-02/project/adidas-details.jpg",
@@ -21,7 +21,7 @@ export const project_details_data = [
     category: "Brand Identity Toolkit & Advertising",
     title: "Daily Grocery",
     description:
-      "A creative digital project focused on building a strong brand presence and modern online experience.",
+      "For Daily Grocery, Moradabad, we created a complete brand identity and communication toolkit designed to position the brand as a fast, reliable, and modern grocery delivery service. From launch creatives and advertising banners to campaign visuals and day-to-day marketing communication, we built a consistent visual language that reflected the brand’s speed, convenience, and accessibility. The campaign became a huge success, generating 2 lakh+ orders within just two months. Our strategic design, effective marketing campaigns, and creative direction played a key role in driving brand visibility, customer engagement, and rapid adoption in the local market.",
     date: "2026",
     services: "Creative Design",
 
@@ -37,9 +37,9 @@ export const project_details_data = [
     category: "Brand Identity Toolkit",
     title: "Manatee",
     description:
-      "We create meaningful digital experiences that help brands connect with their audience and grow their business.",
-    date: "2025",
-    services: "Web Design & Development",
+      "or Manati, we built a visual identity that feels as bold, effortless, and expressive as the streetwear itself. The idea was to capture that everyday Gen-Z energy — confident, raw, and unapologetically individual. From the logo and typography to the colour palette and overall visual vibe, every element was crafted to feel fresh, flexible, and instantly recognisable. The identity brings together street culture and contemporary fashion to give Manati a look that feels current, authentic, and made to stand out.",
+    date: "2024",
+    services: "Brand Identity Toolkit",
 
     images: [
        "/assets/img/home-02/project/manatee-details.jpg",
@@ -83,7 +83,7 @@ export const project_details_data = [
     category: "Bus Exterior Branding",
     title: "Indian Air Force",
     description:
-      "A creative branding project developed to create a consistent and engaging visual experience.",
+      "For the Indian Air Force, we designed the exterior experience of a mobile promotional bus created to inspire young minds and introduce students to the world of the Air Force. The bus travels across Delhi and other parts of India, engaging college students and youth through an immersive visual experience. Along with the exterior design, the bus features 3D simulators, fighter aircraft demonstrations, and interactive information about the Indian Air Force. We created the design to feel bold, dynamic, and aspirational, turning a moving vehicle into an engaging platform for awareness, inspiration, and discovery.",
     date: "2022",
     services: "Bus Exterior Branding",
 
@@ -99,7 +99,7 @@ export const project_details_data = [
     category: "Coffee Table Book Design",
     title: "Varanasi Government",
     description:
-      "A complete digital project focused on visual storytelling, usability and modern design.",
+      "For Smart City Varanasi, we created a thoughtfully crafted coffee table book that captures the city’s rich heritage, evolving identity, and vision for the future. The book brings together Varanasi’s history, culture, key developments, and upcoming strategies shaping its transformation into a smarter, more progressive city. The publication also features a message from Prime Minister Narendra Modi and was supported at its launch, adding to its significance and reach. We focused on creating a visual narrative that connects the timeless spirit of Varanasi with its vision for the future.",
     date: "2025",
     services: "Coffee Table Book Design",
 
