@@ -18,7 +18,7 @@ const VideoTwo = () => {
                 playsInline={true}
               >
                 <source
-                  src="https://html.aqlova.com/videos/liko/liko.mp4"
+                  src="/video/videoDH.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -29,7 +29,7 @@ const VideoTwo = () => {
                   </span>
                   Work in motion
                 </span>
-                <h2 className="tp-video-title">Play Reel</h2>
+                {/* <h2 className="tp-video-title">Play Reel</h2> */}
                 <p>
                   Our work is best experienced in motion. {"Don't"}
                   forget to put on your headphones.
